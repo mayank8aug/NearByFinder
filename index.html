@@ -1,0 +1,21 @@
+<html>
+<head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script type="text/javascript" src="props.js"></script>
+    <script src="script.js" type="text/babel"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+    var scriptEl = document.createElement('script');
+    scriptEl.src = 'https://maps.googleapis.com/maps/api/js?libraries=places&key='+systemProperties['apiKey'];
+    document.body.appendChild(scriptEl);
+</script>
+<div id="mainDivId">
+    <div id="map"></div>
+    <div id="content"></div>
+</div>
+</body>
+</html>
